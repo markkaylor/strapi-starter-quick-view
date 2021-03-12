@@ -1,38 +1,67 @@
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333333;
+}
+
+.App h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.starter-grid {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.starter-card {
+  display: flex;
+  width: 200px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px dashed gray;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.starter-card h3 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.starter-issues-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.starter-issue-count {
+  color: #2e2e8b;
+  font-weight: bold;
+}
+
+.starter-link {
+  color: gray;
+  font-weight: normal;
+  text-decoration: none;
+  border-bottom: 1px dashed gray;
+}
+
+.danger {
+  color: #e80e0e;
+}
+
+.warning {
+  color: #e89b0e;
+}
+
+.success {
+  color: #29b329
 }
