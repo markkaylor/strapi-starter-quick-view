@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [starters, setStarters] = useState([])
-
+  const [repos, setRepos] = useState({ starters: [], templates: [] })
+  const [view, setView] = useState('starters')
 
   function getIssueCountClass(issueCount) {
     if (issueCount < 5) {
@@ -18,6 +18,10 @@ function App() {
     return 'danger'
   }
 
+  function handleClick(viewUpdate) {
+    setView(viewUpdate)
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get(
@@ -28,48 +32,76 @@ function App() {
           },
         }
       )
-      const filteredSortedData = data
+      const filteredSortedStarters = data
         .filter(
           (repo) => repo.name.startsWith('strapi-starter') && !repo.archived
         )
         .map((repo) => repo)
         .sort((a, b) => (a.open_issues_count < b.open_issues_count ? 1 : -1))
 
-      setStarters(filteredSortedData)
+      const filteredSortedTemplates = data
+        .filter(
+          (repo) => repo.name.startsWith('strapi-template') && !repo.archived
+        )
+        .map((repo) => repo)
+        .sort((a, b) => (a.open_issues_count < b.open_issues_count ? 1 : -1))
+
+      setRepos({
+        starters: filteredSortedStarters,
+        templates: filteredSortedTemplates,
+      })
     }
     fetchData()
   }, [])
 
   return (
     <div className="App">
-      <h1>Starter Issues</h1>
-      <div className="starter-grid">
-        {starters &&
-          starters.map((starter) => {
-            const starterName = starter.name.split('-').slice(2).join(' ')
+      <h1 className="uppercase">{view} Issues</h1>
+      <div className="issue-button-container">
+        <button
+          className="issue-button-link"
+          onClick={() => handleClick('starters')}
+        >
+          Starters
+        </button>
+        <button
+          className="issue-button-link"
+          onClick={() => handleClick('templates')}
+        >
+          Templates
+        </button>
+      </div>
+      <div className="issue-grid">
+        {repos[view] &&
+          repos[view].map((issue) => {
+            const issueName = issue.name.split('-').slice(2).join(' ')
             return (
-              <div className="starter-card" key={starter.id}>
-                <h3>{starterName} </h3>
-                <div className="starter-issues-container">
+              <div className="issue-card" key={issue.id}>
+                <h3>{issueName} </h3>
+                <div className="issues-container">
                   <p>Issues + PRs:</p>
-                  <p className={`starter-issue-count ${getIssueCountClass(starter.open_issues_count)}`}>
-                    {starter.open_issues_count}
+                  <p
+                    className={`issue-count ${getIssueCountClass(
+                      issue.open_issues_count
+                    )}`}
+                  >
+                    {issue.open_issues_count}
                   </p>
                 </div>
                 <div className="link-container">
                   <a
-                    className="starter-link"
+                    className="issue-link"
                     target="_blank"
                     rel="noreferrer"
-                    href={starter.html_url}
+                    href={issue.html_url}
                   >
                     Go to repo
                   </a>
                   <a
-                    className="starter-link"
+                    className="issue-link"
                     target="_blank"
                     rel="noreferrer"
-                    href={`${starter.html_url}/issues`}
+                    href={`${issue.html_url}/issues`}
                   >
                     Go to issues
                   </a>

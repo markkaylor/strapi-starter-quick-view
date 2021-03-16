@@ -8,14 +8,31 @@
   text-align: center;
 }
 
-.starter-grid {
+.issue-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
+.issue-button-link {
+  border: none;
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+.issue-button-link:focus {
+  cursor: pointer
+}
+
+.issue-grid {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.starter-card {
+.issue-card {
   display: flex;
   width: 200px;
   flex-direction: column;
@@ -26,7 +43,7 @@
   border-radius: 4px;
 }
 
-.starter-card h3 {
+.issue-card h3 {
   text-align: center;
 }
 
@@ -36,18 +53,18 @@
   justify-content: space-between;
 }
 
-.starter-issues-container {
+.issues-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.starter-issue-count {
+.issue-count {
   color: #2e2e8b;
   font-weight: bold;
 }
 
-.starter-link {
+.issue-link {
   color: gray;
   font-weight: normal;
   text-decoration: none;
@@ -64,4 +81,8 @@
 
 .success {
   color: #29b329
+}
+
+.uppercase {
+  text-transform: capitalize;
 }
