@@ -1,0 +1,107 @@
+﻿[
+  {
+    "Name": "Gatsby corporate starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-gatsby-corporate",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Gatsby catalog starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-gatsby-catalog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Gatsby blog starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-gatsby-blog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Gridsome blog starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-gridsome-blog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Gridsome portfolio",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-gridsome-portfolio",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Nuxt ecommerce starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-nuxt-e-commerce",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Nuxt blog starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-nuxt-blog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Next corporate starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-next-corporate",
+    "Owner": "Rémi de Juvigny"
+  },
+  {
+    "Name": "Next ecommerce starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-next-ecommerce",
+    "Owner": "Rémi de Juvigny"
+  },
+  {
+    "Name": "Next blog starter",
+    "Type": "Starter",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-starter-next-blog",
+    "Owner": "Rémi de Juvigny"
+  },
+  {
+    "Name": "Portfolio template",
+    "Type": "Template",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-template-portfolio",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Blog template",
+    "Type": "Template",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-template-blog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Corporate template",
+    "Type": "Template",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-template-corporate",
+    "Owner": "Rémi de Juvigny"
+  },
+  {
+    "Name": "Catalog template",
+    "Type": "Template",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-template-catalog",
+    "Owner": "Mark Kaylor"
+  },
+  {
+    "Name": "Ecommerce template",
+    "Type": "Template",
+    "Status": "✅ Maintained",
+    "Link": "https://github.com/strapi/strapi-template-ecommerce",
+    "Owner": "Rémi de Juvigny"
+  }
+]

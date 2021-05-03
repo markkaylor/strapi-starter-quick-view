@@ -8,14 +8,14 @@
   text-align: center;
 }
 
-.issue-button-container {
+.repo-button-container {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
-.issue-button-link {
+.repo-button-link {
   border: none;
   background-color: white;
   outline: none;
@@ -26,19 +26,19 @@
   font-size: 1rem;
 }
 
-.issue-button-link:hover {
+.repo-button-link:hover {
   cursor: pointer;
   
 }
 
-.issue-grid {
+.repo-grid {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.issue-card {
+.repo-card {
   display: flex;
   width: 200px;
   flex-direction: column;
@@ -49,7 +49,7 @@
   border-radius: 4px;
 }
 
-.issue-card h3 {
+.repo-card h3 {
   text-align: center;
 }
 
@@ -59,18 +59,18 @@
   justify-content: space-between;
 }
 
-.issues-container {
+.repos-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.issue-count {
+.repo-count {
   color: #2e2e8b;
   font-weight: bold;
 }
 
-.issue-link {
+.repo-link {
   color: gray;
   font-weight: normal;
   text-decoration: none;
